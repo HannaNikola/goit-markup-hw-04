@@ -155,11 +155,15 @@ a{
 
 /* hero */
 .hero {
-    background: var(--bacground-accent-color)  ;
+    background-image:linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)) , url("../images/heroimg.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: auto;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 
@@ -311,6 +315,11 @@ a{
     padding-top: 30px;
     padding-bottom: 30px ;
     background-color: var(--color-wite-transporet);
+}
+.icon{
+    display: flex;
+    justify-content:center ;
+    
 }
 
 /* footer */
