@@ -336,14 +336,24 @@ fill: currentColor;
 .icon-link {
     display: flex;
     justify-content: center;
-    
     }
-    .icon {
-    width: 20px;
+
+   .icon {
+   width: 20px;
    height: 20px;
    margin-top: 16px;
    margin-right: 10px;
-    }
+   background: var(--white-color);
+   border-radius: 50%
+}
+    
+   .icon:hover,
+   .icon:focus{
+    background: var(--accent-text);
+   }
+  
+   
+    
     
 /* our-clients */
 .section-clients {
@@ -368,13 +378,17 @@ fill: currentColor;
     
     }
     .item-clients:last-of-type{
-        margin-right: 0;
-    }
-    .icon-clients:hover,
-    .icon-clients:focus{
-        fill: #2196F3;
-    }
+            margin-right: 0;}
     
+    
+        .icon-clients:hover,
+        .icon-clients:focus {
+          fill: #2196F3 ;
+        }
+        .item-clients:hover ,
+        .item-clients:focus {
+        border: 1px solid #2196F3;
+        }
     
     
 /* footer */
