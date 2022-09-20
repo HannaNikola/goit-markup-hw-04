@@ -130,15 +130,12 @@ a{
   .contact-wrap:first-of-type { 
     margin-right: 50px;
 }
- .icon-mail{
-    display: flex;
- }
+ 
 .contact-wrap .contacts {
     display: block;
-    
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-right: 0px;
+    margin-right:0;
 
     color:var(--primary-text-color);
     font-weight: 500;
@@ -532,4 +529,10 @@ color: var(--white-color);}
     line-height: 1.8;
     
 }
-    
+.link-img {
+display:block;
+}
+.link-img:hover,
+.link-img:focus {
+box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
