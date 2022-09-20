@@ -130,7 +130,12 @@ a{
   .contact-wrap:first-of-type { 
     margin-right: 50px;
 }
- 
+ .icon-contacts{
+fill: currentColor;
+ }
+ .contact-wrap:hover svg{
+    fill: var(--accent-text);
+ }
 .contact-wrap .contacts {
     display: block;
     padding-top: 32px;
