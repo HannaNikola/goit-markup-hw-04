@@ -123,12 +123,14 @@ a{
     } a
    
     /* contact-nav */
+    
 .contact-nav {
     display: flex;
-    margin-left: auto ;
-    }
+    margin-left: auto;
+}
+
   .contact-wrap:first-of-type { 
-    margin-right: 50px;
+    margin-right:50px;
 }
  .icon-contacts{
 fill: currentColor;
@@ -140,7 +142,7 @@ fill: currentColor;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-right:0;
+    margin-right:0 ;
 
     color:var(--primary-text-color);
     font-weight: 500;
@@ -339,17 +341,20 @@ fill: currentColor;
     }
 
    .icon {
-   width: 20px;
-   height: 20px;
+   width:20 ;
+   height:20;
    margin-top: 16px;
    margin-right: 10px;
+   fill: var(--background-icon);
    background: var(--white-color);
+   background-size: 20px;
    border-radius: 50%
 }
     
    .icon:hover,
    .icon:focus{
     background: var(--accent-text);
+    fill: var(--white-color);
    }
   
    
