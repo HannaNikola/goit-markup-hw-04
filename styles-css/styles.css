@@ -340,11 +340,15 @@ fill: currentColor;
     padding-bottom: 30px ;
     background-color: var(--color-wite-transporet);
 }
-.link-li{
+.link-li {
  width: 44px;
  height: 44px;
- 
-}
+ background: var(--white-color);
+ border-radius: 50%;
+
+ }
+
+
 .icon-link {
     display: flex;
     justify-content: center;
@@ -355,13 +359,16 @@ fill: currentColor;
    .icon {
    margin-top: 16px;
    fill: var(--background-icon);
-   background: var(--white-color);
-   background-size: 20px;
-   border-radius: 50%
-}
+   background-position: center;
+   
+}  
+  .icon:hover,
+  .icon:focus {
+  fill: var(--white-color);
+  }
     
-   .icon:hover,
-   .icon:focus{
+   .link-li:hover,
+   .link-li:focus{
     background: var(--accent-text);
     fill: var(--white-color);
    }
@@ -389,10 +396,13 @@ fill: currentColor;
     }
 .icon-clients {
     fill: var(--background-icon);
+    background-position: center;
     
     }
     .item-clients:last-of-type{
-            margin-right: 0;}
+            margin-right: 0;
+            
+        }
     
     
         .icon-clients:hover,
@@ -453,18 +463,19 @@ display: inline-block;
     display: flex;
     align-items: baseline;
     }
-     .social-footer{
-    display:flex;
-    gap: 10px;
+     .social-footer {
+     display:flex;
+     gap: 10px;
+
      }
      .icon-social {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-     }
+    }
+
     .social-link {
      margin-left: 70px;
     }
@@ -475,11 +486,13 @@ display: inline-block;
     }
     
     .icon-footer {
+    display: inline-block ;
     fill: var(--white-color);
-    }
+    
+     }
 
-.icon-social:hover,
-.icon-social:focus {
+  .icon-social:hover,
+  .icon-social:focus {
     background-color: var(--accent-battons-hover);
 }
 
@@ -545,11 +558,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 /* portfolio prodjekt */ 
 
-.project{
+.project {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px ;
+    gap: 30px;
     
 }
  .project >.item-work {
