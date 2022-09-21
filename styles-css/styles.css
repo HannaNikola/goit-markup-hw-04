@@ -352,6 +352,7 @@ fill: currentColor;
 .icon-link {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-top: 16px;
     }
@@ -359,7 +360,7 @@ fill: currentColor;
    .icon {
    margin-top: 16px;
    fill: var(--background-icon);
-   background-position: center;
+   
    
 }  
   .icon:hover,
@@ -385,6 +386,7 @@ fill: currentColor;
 .our-clients{
    display: flex;
    justify-content: center;
+   align-items: center;
 }
  .item-clients {
     margin-right: 30px;
@@ -393,6 +395,7 @@ fill: currentColor;
     fill: var(--background-icon);
     border: 1px solid var(--background-icon);
     padding: 16px 32px;
+    box-shadow :0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 .icon-clients {
     fill: var(--background-icon);
@@ -468,14 +471,6 @@ display: inline-block;
      gap: 10px;
 
      }
-     .icon-social {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-
     .social-link {
      margin-left: 70px;
     }
@@ -483,6 +478,11 @@ display: inline-block;
     justify-content: center;
     display: flex;
     align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     
     .icon-footer {
@@ -493,6 +493,7 @@ display: inline-block;
 
   .icon-social:hover,
   .icon-social:focus {
+    border-radius: 50%;
     background-color: var(--accent-battons-hover);
 }
 
