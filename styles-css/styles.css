@@ -141,10 +141,11 @@ a{
   .contact-wrap:first-of-type { 
     margin-right:50px;
 }
- .icon-contacts{
+ .icon-contacts {
 fill: currentColor;
  }
- .contact-wrap:hover svg{
+ .contact-wrap:hover svg ,
+ .contact-wrap:focus svg{
     fill: var(--accent-text);
  }
 .contact-wrap .contacts {
