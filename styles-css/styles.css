@@ -123,9 +123,7 @@ a{
     } 
    
     /* contact-nav */
-    
-
-  .icon-contacts {
+.icon-contacts {
     margin-right: 10px;
   }
  
@@ -149,7 +147,7 @@ fill: currentColor;
     fill: var(--accent-text);
  }
 .contact-wrap .contacts {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right:0 ;
@@ -305,7 +303,6 @@ fill: currentColor;
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--background-second-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .employees {
     display: flex;
@@ -402,10 +399,6 @@ fill: currentColor;
 .item-clients {
     width: 170px;
     height: 92px;
-    border-radius: 4px;
-    border: 1px solid var(--background-icon);
-    fill: var(--background-icon);
-    border: 1px solid var(--background-icon);
 }
 .a-icon {
     width:100%;
@@ -413,17 +406,21 @@ fill: currentColor;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--background-icon);
+    border-radius: 4px;
 }
     
+.a-icon:hover .icon-clients ,
+.a-icon:focus .icon-clients {
+    fill: #2196F3;
+}
 .a-icon:hover ,
-.a-icon:focus {
- border: 1px solid #2196F3;
+.a-aicon:focus {
+     border: 1px solid #2196F3;
+    border-radius: 4px;
 }
 
-.icon-clients:hover ,
-.icon-clients:focus {
-fill: #2196F3;
-}
+
   
     
 /* footer */
@@ -486,29 +483,26 @@ display: inline-block;
     justify-content: center;
     display: flex;
     align-items: center;
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    
-    }
-    
-    .icon-footer {
+}
+.icon-footer {
     display: inline-block ;
     fill: var(--white-color);
-    
-     }
+}
 
-  .icon-social:hover,
-  .icon-social:focus {
+  .link-footer:hover,
+  .link-footer:focus {
     border-radius: 50%;
     background-color: var(--accent-battons-hover);
 }
-
-    
-    .title-social {
+.title-social {
     display: inline-block;
     margin-bottom: 20px;
+
     font-family: Roboto;
     font-weight: 700;
     color: var(--white-color);
